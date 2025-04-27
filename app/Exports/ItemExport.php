@@ -3,7 +3,6 @@
 namespace App\Exports;
 
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromView;
 use Maatwebsite\Excel\Concerns\WithColumnFormatting;
 use Maatwebsite\Excel\Concerns\WithColumnWidths;
@@ -18,7 +17,6 @@ class ItemExport implements FromView, WithColumnWidths, WithStyles, WithColumnFo
 
     public function view(): View
     {
-        // dd($this->data);
         return view('export.items', ['data' => $this->data]);
     }
 

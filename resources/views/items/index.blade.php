@@ -116,7 +116,7 @@
                     .then(response => response.json())
                     .then(data => {
                         alert(data.message);
-                        location.reload(); // Reload the page to reflect the changes
+                        location.reload();
                     })
                     .catch(error => {
                         console.error('Error deleting item:', error);
@@ -151,8 +151,8 @@
                 .then(response => response.json())
                 .then(data => {
                     alert(data.message);
-                    closeModal(); // Close the modal
-                    location.reload(); // Reload the page to reflect the changes
+                    closeModal();
+                    location.reload();
                 })
                 .catch(error => {
                     console.error('Error saving data:', error);
